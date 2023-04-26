@@ -1,0 +1,234 @@
+﻿* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.background {
+    background-image: url('../Images/Design sem nome (2) (1).png');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    width: 100%;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 45px;
+    padding-left: 8%;
+    padding-right: 8%;
+}
+
+.logo {
+    /*color: #fff;
+    font-size: 35px;
+    cursor: pointer;
+    letter-spacing: 1px;*/
+    width: 100px;
+    height: 100px;
+    margin-top:-20px;
+}
+
+span {
+    color: #ff0000
+}
+
+nav ul li {
+    list-style-type: none;
+    display: inline-block;
+    padding: 10px 25px;
+}
+
+    nav ul li a {
+        color: #fff;
+        text-decoration: none;
+        font-weight: bold;
+        text-transform: capitalize;
+    }
+
+        nav ul li a:hover {
+            color: #f9004d;
+            transform: .4s;
+        }
+
+.btn {
+    background-color: #DA8E26;
+    color: #fff;
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 10px 25px;
+    border-radius: 30px;
+    transition: transform .4s;
+}
+
+    .btn:hover {
+        transform: scale(1.2);
+    }
+
+
+.Main {
+    position: absolute;
+    top: 50%;
+    left: 8%;
+    transform: translateY(-50%);
+}
+
+    .Main span {
+        color: #fff;
+    }
+
+
+
+h1 {
+    color: #fff;
+    margin: 20px 0px 20px;
+    font-size: 75px;
+}
+
+
+
+h4 {
+    color: #fcfc;
+    letter-spacing: 2px;
+    font-size: 20px;
+}
+
+h3 {
+    color: #fff;
+    font-size: 25px;
+    margin-bottom: 50px;
+}
+
+.Main .text-3 span {
+    color: #00804b;
+    font-weight: 500;
+}
+
+
+
+/*Cardápio*/
+
+.Container-serviços {
+    background-color: #101010;
+    width: 100%;
+    padding: 100px 0px;
+}
+
+
+.title h2 {
+    color: #fff;
+    font-size: 75px;
+    width: 1130px;
+    margin: 30px auto;
+    text-align: center;
+}
+
+.Caixa {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 400px;
+    flex-wrap: wrap;
+}
+
+.Card {
+    background: linear-gradient(90deg, #000, #737373);
+    height: 230px;
+    width: 435px;
+    border-radius: 20px;
+    margin: 15px;
+    position: relative;
+    overflow: hidden;
+    /*text-align: center;*/
+}
+
+.card-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.img-card {
+    height: 210px;
+    width: 210px;
+    margin-right: 20px;
+}
+
+.titulo-cardapio {
+    color: #DA8E26;
+}
+
+.text-container {
+    text-align: left;
+}
+
+h5 {
+    color: #fff;
+    font-size: 23px;
+    margin-bottom: 15px;
+}
+
+button {
+    background-color: #ff0000;
+    color: #fff;
+    text-transform: none;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 13px 20px;
+    border-radius: 30px;
+    transition: .4s;
+}
+
+    button:hover {
+        background-color: transparent;
+        border: 2px solid #f9004d;
+        cursor: pointer;
+    }
+
+.Paragrafo-button {
+    color: #7D7D7D;
+    font-size: 18px;
+    line-height: 27px;
+    margin-bottom: 25px;
+}
+
+    .Paragrafo-button button {
+        margin-top: 25px;
+    }
+
+
+
+    /*parte do telefone*/
+.Container-telefone {
+    background-color: #DA8E26;
+    width: 100%;
+    padding: 100px 0px;
+}
+
+.img-telefone {
+    width: 330px;
+    margin: 30px auto;
+    text-align: center;
+    display: flex;
+}
+
+
+.Caixa-telefone {
+    text-align: center;
+}
+
+.titulo-telefone {
+    color: #800000
+}
+
+h1.titulo-telefone,
+h5 {
+    display: inline-block;
+    text-align: center;
+}
+
