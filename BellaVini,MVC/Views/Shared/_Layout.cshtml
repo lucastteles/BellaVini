@@ -6,7 +6,7 @@
     <title>@ViewData["Title"] - BellaVini.MVC</title>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/style.css" asp-append-version="true">
-</head>*@
+    </head>*@
 <head>
 
     <meta charset="UTF-8">
@@ -28,24 +28,68 @@
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
     @await RenderSectionAsync("Scripts", required: false)
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Rubik+Wet+Paint&display=swap" rel="stylesheet">
 </head>
 <body>
-    
-    
+
+
     <div class="container">
         <main role="main" class="pb-3">
             @RenderBody()
         </main>
     </div>
 
-    <footer class="border-top footer text-muted">
-        <div class="container">
-            &copy; 2023 - BellaVini_MVC - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+    @*<footer class="border-top footer text-muted">
+                <div class="container">
+                    &copy; 2023 - BellaVini_MVC - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+                </div>
+            </footer>*@
+    <footer>
+    <div id="footer_content">
+        <div id="footer_contacts">
+            <img src="~/Images/BELLAVINI__2_-removebg-preview.png"  />
         </div>
-    </footer>
+        <ul class="footer-list">
+            <li>
+                <h3>Endereço</h3>
+            </li>
+            <li>
+                <h5>Rua projetada Moreira<br>
+                    Soares, Bangu - RJ</h5>
+            </li>
+        </ul>
+
+        <ul class="footer-list">
+            <li>
+                <h3>Horários</h3>
+            </li>
+            <li>
+               <h5>Aberto de terça a domingo<br>
+                   18h:45 às 23h:45</h5>
+            </li>
+        </ul>
+
+        <ul class="footer-list">
+            <li>
+                <h3>Contatos</h3>
+            </li>
+            <li>
+               <h5>BellaViniburguer@gmail.com</h5>
+            </li>
+            <li>
+               <h5>Tel:(21) 986642875</h5>
+            </li>
+        </ul>
+    </div>
+    <div id="footer_copyright">
+        &#169
+        
+        <p>2023 BellaVini Burguer</p>
+    </div>
+</footer>
     @*<script src="~/lib/jquery/dist/jquery.min.js"></script>
-    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="~/js/site.js" asp-append-version="true"></script>
-    @await RenderSectionAsync("Scripts", required: false)*@
+            <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+            <script src="~/js/site.js" asp-append-version="true"></script>
+            @await RenderSectionAsync("Scripts", required: false)*@
 </body>
 </html>

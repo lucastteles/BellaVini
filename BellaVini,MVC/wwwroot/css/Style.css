@@ -20,6 +20,7 @@ nav {
     padding: 45px;
     padding-left: 8%;
     padding-right: 8%;
+    height: 190px;
 }
 
 .logo {
@@ -27,9 +28,8 @@ nav {
     font-size: 35px;
     cursor: pointer;
     letter-spacing: 1px;*/
-    width: 100px;
-    height: 100px;
-    margin-top:-20px;
+    width: 200px;
+    height: 200px;
 }
 
 span {
@@ -83,10 +83,11 @@ nav ul li {
 
 
 
-h1 {
+.banner {
     color: #fff;
     margin: 20px 0px 20px;
     font-size: 75px;
+    font-family: 'Rubik Wet Paint', sans-serif;
 }
 
 
@@ -95,12 +96,14 @@ h4 {
     color: #fcfc;
     letter-spacing: 2px;
     font-size: 20px;
+    font-family: 'Rubik Wet Paint', sans-serif;
 }
 
 h3 {
     color: #fff;
     font-size: 25px;
     margin-bottom: 50px;
+    margin-top: 30px;
 }
 
 .Main .text-3 span {
@@ -127,12 +130,20 @@ h3 {
     text-align: center;
 }
 
-.Caixa {
+/*.Caixa {
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 400px;
     flex-wrap: wrap;
+}*/
+
+.Caixa {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    max-height: 900px;
 }
 
 .Card {
@@ -140,9 +151,11 @@ h3 {
     height: 230px;
     width: 435px;
     border-radius: 20px;
-    margin: 15px;
     position: relative;
     overflow: hidden;
+    margin: 120px; /**/
+    margin-top: 10px;
+    width: calc(50% - 400px);
     /*text-align: center;*/
 }
 
@@ -182,6 +195,9 @@ button {
     padding: 13px 20px;
     border-radius: 30px;
     transition: .4s;
+    font-size: 17px;
+    float: right;
+    margin-right: 10px;
 }
 
     button:hover {
@@ -201,9 +217,25 @@ button {
         margin-top: 25px;
     }
 
+.button-container{
+    align-items: center;
+    justify-content: center;
+    display: flex;
 
+}
 
-    /*parte do telefone*/
+.comprar-agora {
+    background-color: #800000;
+    color: #fff;
+    text-transform: none;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 13px 20px;
+    border-radius: 30px;
+    transition: .4s;
+    font-size: 20px;
+}
+/*parte do telefone*/
 .Container-telefone {
     background-color: #DA8E26;
     width: 100%;
@@ -217,12 +249,25 @@ button {
     display: flex;
 }
 
+h1 {
+    margin: 20px 0px 20px;
+    font-size: 75px;
+}
+
+.titulo-abaixo {
+    width: 268px;
+    display: flex;
+    margin: 30px auto;
+}
+
 
 .Caixa-telefone {
     text-align: center;
+    lign-items: center;
+    justify-content: center;
 }
 
-.titulo-telefone {
+/*.titulo-telefone {
     color: #800000
 }
 
@@ -230,5 +275,98 @@ h1.titulo-telefone,
 h5 {
     display: inline-block;
     text-align: center;
+}*/
+
+.titulo-telefone {
+    color: #800000;
+    align-items: center;
+    display: flex;
 }
 
+span08 {
+    font-size: 24px;
+    color: white;
+    margin: 20px 11px 20px;
+}
+
+.telefone {
+    text-align: left;
+    display: flex;
+    margin: 30px auto;
+    align-items: center;
+    justify-content: center;
+    width: 600px;
+    letter-spacing: 0.1px;
+}
+
+/*imagem cheddar*/
+
+
+
+/*footer*/
+footer {
+    color: #FFF;
+}
+
+#footer_content {
+    background-color: #800000;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    padding: 3rem 3.5rem;
+}
+
+#footer_contacts h1 {
+    margin-bottom: 0.75rem;
+}
+
+#footer_contacts img {
+    width: 200px;
+    height: 200px;
+}
+
+#footer_social_media {
+    display: flex;
+    gap: 2rem;
+    margin-top: 1.5rem;
+}
+
+    #footer_social_media .footer-link {
+        display: flex;
+        align-items: center;
+        justify-items: center;
+        height: 2.5rem;
+        width: 2.5rem;
+        color: aqua;
+        border-radius: 50%;
+    }
+
+.footer-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    list-style: none;
+    text-align: center;
+}
+
+    .footer-list .footer-link {
+        color: #FF8F1B;
+        transition: all 0.4s;
+    }
+
+        .footer-list .footer-link:hover {
+            color: white;
+        }
+
+#footer_copyright {
+    color: #DA8E26;
+    display: flex;
+    justify-content: center;
+    background-color: #800000;
+    font-size: 1.9rem;
+    padding: 1.5rem;
+    font-weight: 300;
+}
+
+.background-onda {
+    background-color: #800000
+}
