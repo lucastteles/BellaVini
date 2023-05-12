@@ -23,6 +23,11 @@ namespace BellaVini_MVC.Controllers
             return View();
         }
 
+        public IActionResult Cardapio()
+        {
+            return View();
+        } 
+
         public IActionResult Privacy()
         {
             return View();

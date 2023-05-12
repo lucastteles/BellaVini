@@ -55,14 +55,15 @@ nav ul li {
         }
 
 .btn {
-    background-color: #DA8E26;
+    background-color: #800000;
     color: #fff;
     text-decoration: none;
     border: 2px solid transparent;
     font-weight: bold;
-    padding: 10px 25px;
+    padding: 15px 30px;
     border-radius: 30px;
     transition: transform .4s;
+    font-size: 20px;
 }
 
     .btn:hover {
@@ -116,7 +117,7 @@ h3 {
 /*Cardápio*/
 
 .Container-serviços {
-    background-color: #101010;
+    background-color: #040404;
     width: 100%;
     padding: 100px 0px;
 }
@@ -147,8 +148,9 @@ h3 {
 }
 
 .Card {
-    background: linear-gradient(90deg, #000, #737373);
-    height: 230px;
+    background: linear-gradient(90deg, #040404, #737373);
+    max-height: 540px;
+    min-height: 240px;
     width: 435px;
     border-radius: 20px;
     position: relative;
@@ -156,6 +158,8 @@ h3 {
     margin: 120px; /**/
     margin-top: 10px;
     width: calc(50% - 400px);
+    height: 280px;
+    display: flex;
     /*text-align: center;*/
 }
 
@@ -174,6 +178,7 @@ h3 {
 
 .titulo-cardapio {
     color: #DA8E26;
+    margin: 0px;
 }
 
 .text-container {
@@ -210,18 +215,17 @@ button {
     color: #7D7D7D;
     font-size: 18px;
     line-height: 27px;
-    margin-bottom: 25px;
+    margin-top: 10px;
 }
 
     .Paragrafo-button button {
         margin-top: 25px;
     }
 
-.button-container{
+.button-container {
     align-items: center;
     justify-content: center;
     display: flex;
-
 }
 
 .comprar-agora {
@@ -231,6 +235,7 @@ button {
     border: 2px solid transparent;
     font-weight: bold;
     padding: 13px 20px;
+    padding: 23px 25px;
     border-radius: 30px;
     transition: .4s;
     font-size: 20px;
@@ -370,3 +375,57 @@ footer {
 .background-onda {
     background-color: #800000
 }
+
+
+
+/**************************************************************/
+/*Cardapio*/
+
+.background-cardapio {
+    background-image: url('../Images/cardapio.png');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    width: 100%;
+}
+
+.Main-center {
+    position: absolute;
+    top: 50%;
+    left: 16%;
+    text-align: center;
+    transform: translateY(-50%);
+}
+
+.banner-cardapio {
+    color: #fff;
+    margin: 20px 0px 20px;
+    font-size: 50px;
+}
+
+h2 {
+    color: #fff;
+    font-size: 25px;
+}
+
+.background-onda-cardapio {
+    margin-top: -20%;
+    height:327px;
+}
+
+.title h2 {
+    font-size: 60px;
+    text-align: left;
+    margin-left: 5%;
+}
+
+
+.Caixa-cardapio {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    
+}
+  
+    
