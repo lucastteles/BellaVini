@@ -7,6 +7,15 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Content Remove="wwwroot\Images\background.jpg" />
+    <Content Remove="wwwroot\Images\Design sem nome %285%29.png" />
+    <Content Remove="wwwroot\Images\hamburguer-artesanal_cards-removebg-preview.png" />
+    <Content Remove="wwwroot\Images\hamburguer-de-vista-frontal-em-um-carrinho-removebg-preview %281%29.png" />
+    <Content Remove="wwwroot\Images\hamburguer-delicioso-com-mesa-removebg-preview %281%29.png" />
+    <Content Remove="wwwroot\Images\istockphoto-1205795266-170667a.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation" Version="5.0.17" />
   </ItemGroup>
 
