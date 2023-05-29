@@ -5,6 +5,10 @@
     font-family: 'Josefin Sans', sans-serif;
 }
 
+/*.menu {
+    display:none;
+}*/
+
 .background {
     background-image: url('../Images/Design sem nome (2) (1).png');
     background-size: cover;
@@ -24,10 +28,6 @@ nav {
 }
 
 .logo {
-    /*color: #fff;
-    font-size: 35px;
-    cursor: pointer;
-    letter-spacing: 1px;*/
     width: 200px;
     height: 200px;
 }
@@ -70,6 +70,8 @@ nav ul li {
         transform: scale(1.2);
     }
 
+    /*/************************************************************** Até aqui*/
+
 
 .Main {
     position: absolute;
@@ -91,7 +93,6 @@ nav ul li {
     font-family: 'Rampart One', sans-serif;
    
 }
-
 
 
 h4 {
@@ -438,7 +439,6 @@ footer {
 }
 
 
-
 /**************************************************************/
 /*Cardapio*/
 
@@ -520,5 +520,270 @@ h2 {
     width: 210px;
     margin-right: 20px;
 }
+
+
+/*Responsivo*/
+
+@media (max-width: 768px) {
+    /* Estilos para dispositivos com largura máxima de 768px */
+    .logo {
+        width: 30vw;
+    }
+
+    nav ul li {
+        padding: 1vh 1vw;
+    }
+
+    .btn {
+        padding: 2vh 4vw;
+        font-size: 3vw;
+    }
+}
+
+@media (max-width: 480px) {
+    /* Estilos para dispositivos com largura máxima de 480px */
+
+    html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+    }
+
+    .container-index {
+        width: 85%;
+    }
+
+    .Main {
+        display: none;
+    }
+
+    .background {
+        height: 700px;
+        width: 122%;
+        margin-left: -90px;
+    }
+
+    nav {
+        display: none;
+    }
+
+
+    .menu {
+        background-color: transparent;
+        width: 100%;
+        height: 37px;
+        padding: 30px 0;
+        position: fixed;
+        top: 0;
+        left: 0;
+    }
+
+    #logol {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%)
+    }
+
+
+    /*body {
+        background-color: #ffffff;
+        font-family: 'Just Another Hand', cursive;
+        overflow-X: hidden;
+    }*/
+
+    #check {
+        display: none;
+    }
+
+    #icone {
+        cursor: pointer;
+        padding: 32px;
+        position: fixed;
+        z-index: 1;
+        border: 1px #fff solid;
+        top: 20px;
+        left: 20px;
+    }
+
+    .barra {
+        background-color:  rgba(0, 0, 0, 0.5); /* Rojo semi-transparente */
+        ;
+        height: 100%;
+        width: 250px;
+        position: fixed;
+        transition: all .2s linear;
+        left: -250px;
+        z-index: 1;
+        margin-top: 100px;
+    }
+
+    .responsiva {
+        width: 100%;
+        position: absolute;
+        top: 80px;
+    }
+
+
+        .responsiva a {
+            text-decoration: none;
+        }
+
+    .Link {
+        background-color: rgba(0, 0, 0, 0.5); /* Rojo semi-transparente */
+        padding: 20px;
+        font-family: 'Gotham';
+        font-size: 12pt;
+        transition: all .3s linear;
+        color: #ffffff;
+        border-bottom: 1px solid #FF8F1B;
+        opacity: 0;
+    }
+
+        .Link:hover {
+            background-color: #076992;
+            color: #ffffff;
+        }
+
+        .Link ion-icon {
+            margin-right: 20px;
+            font-size: 20px;
+        }
+
+    #check:checked ~ .barra {
+        transform: translateX(250px);
+    }
+
+        #check:checked ~ .barra .responsiva a .Link {
+            opacity: 1;
+            transition-delay: .3s;
+        }
+
+    #banner1 {
+        padding-top: 97px;
+        width: 100%;
+    }
+
+
+
+    .mburg {
+        border-radius: 50%;
+        width: 60px;
+        height: 60px;
+        position: fixed;
+        top: 25px;
+        left: 25px;
+    }
+
+    .hamburguer {
+        position: relative;
+        display: block;
+        background: #fff;
+        width: 30px;
+        height: 3px;
+        top: 29px;
+        left: 15px;
+        transition: .5s ease-in-out;
+    }
+
+        .hamburguer:before,
+        .hamburguer:after {
+            background: #fff;
+            content: '';
+            display: block;
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            transition: .5s ease-in-out;
+        }
+
+        .hamburguer:before {
+            top: -10px;
+        }
+
+        .hamburguer:after {
+            bottom: -10px;
+        }
+
+    input {
+        display: none;
+    }
+
+        input:checked ~ label .hamburguer { 
+            transform: rotate(45deg);
+        }
+
+            input:checked ~ label .hamburguer:before {
+                transform: rotate(90deg);
+                top: 0;
+            }
+
+            input:checked ~ label .hamburguer:after {
+                transform: rotate(90deg);
+                bottom: 0;
+            }
+
+
+            /*parte do telefo ne responsiva*/
+    h1 {
+        margin: 20px 10px 20px;
+        width: 90%;
+        font-size: 70px;
+    }
+
+    span08 {
+        font-size: 22px;
+        color: white;
+        margin: 20px 11px 20px;
+        width: 53%;
+    }
+
+    /*parte do cardápio*/
+
+    .Caixa-cardapio {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .Card-cardapio {
+        background: linear-gradient(90deg, #040404, #737373);
+        border-radius: 20px;
+        position: relative;
+        overflow: hidden;
+        margin: 60px; /**/
+        margin-top: 80px;
+        width: calc(50% - 600px);
+        height: 280px;
+        width: 500px;
+        display: flex;
+        /*text-align: center;*/
+    }
+
+    .card-container-cardapio {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+    }
+
+    .container-index {
+        width:100%;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
 
     

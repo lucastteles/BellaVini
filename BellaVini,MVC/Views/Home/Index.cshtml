@@ -1,4 +1,5 @@
 ﻿<body>
+    <div class="container-index">
    <div class="background">
     <nav>
          <img src="~/Images/BELLAVINI__1_-removebg-preview.png" class="logo" />
@@ -11,6 +12,56 @@
         </ul><!--cabeçalho-link-->
         <a href="#" class="btn">Fazer Pedido</a>
     </nav>
+    
+    
+    <header-navbar>
+
+
+        <!-- menu retrátil lateral esquerda -->
+        <input type="checkbox" id="check">
+        <label id="icone" for="check"></label>
+        <div class="barra">
+            <navbar class="responsiva">
+                <a href="/Home/index">
+                    
+                    <div class="Link">
+                        <ion-icon name="home-outline"></ion-icon>
+                        <span040>Inicio</span040>
+                    </div>
+                </a>
+                <a href="/Account/perfil">
+                     
+                    <div class="Link">
+                        <ion-icon name="people-outline"></ion-icon>
+                        <span040>Cardápio</span040> 
+                    </div>
+                </a>
+                <a href="/Contato/index">
+                    <div class="Link">
+                        <ion-icon name="help-circle-outline"></ion-icon>
+                        <span040>Contato</span040>
+                        </div>
+                </a>
+              
+                
+            </navbar>
+        </div>
+        <!-- barra fixa azul horizontal -->
+
+        <nav-logo class="menu">
+            <a href="/Home/index">
+                <img src="~/Images/BELLAVINI__1_-removebg-preview.png" height="42" width="42" id="logol">
+            </a>
+        </nav-logo>
+
+        <label for="menu-hamburguer">
+            <div class="mburg">
+                <span class="hamburguer"></span>
+            </div>
+        </label>
+
+    </header-navbar>
+
 
     <div class="Main">
         @*<h4>Explosão De Sabores</h4>*@
@@ -141,7 +192,7 @@
 </div>
 
 
-
+</div>
 </body>
 
 
